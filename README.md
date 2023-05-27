@@ -6,4 +6,4 @@ Web development assignment with Html and Css
 * Otuya grace Amara
 * Lawal Yussuf Opeyemi
 * Olarewaju Emmanuel
-
+* Ajayi Joan
