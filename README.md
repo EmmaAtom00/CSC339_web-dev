@@ -2,9 +2,12 @@
 Web development assignment with Html and Css
 
 # Group members
-* Adeoye Marvelous
+* Adeoye Marvellous Oluwaferanmi
+* Sotunde Afolawe James
+* Akinleye Ayomide
+* Iwuagwu Daniel Chidozie
+* Ajayi Joan Temitope
 * Otuya grace Amara
 * Lawal Yussuf Opeyemi
 * Olarewaju Emmanuel
-* Ajayi Joan
 * Adetunji Aishat Opeyemi
