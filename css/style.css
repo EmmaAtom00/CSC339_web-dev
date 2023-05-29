@@ -95,3 +95,104 @@
     text-decoration: none;
     color: #2775ea;
 }
+
+
+/* Atom css */
+
+section{
+    margin: 0em 8em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0em;
+}
+
+#course-header{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.line{
+    width: 120px;
+    border: 2px solid #2774ea;
+}
+
+#allcourse{
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #2774ea;
+    padding: 12px 20px;
+    background: transparent;
+    border-radius: 10px;
+    color: #2774ea;
+}
+
+#allcourse:hover{
+    background: #2774ea;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*-------------- Courses images --------------*/
+
+.course-pic{
+    background: #fff;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 400px;
+    height: 400px;
+}
+
+
+.c-pic{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+
+.course-pic p{
+    margin: 10px 30px;
+}
+
+.hero{
+    font-size: 19px;
+}
+
+.rating{
+    display: flex;
+}
+
+.rating img{
+    width: 30%;
+    margin-left: 30px;
+}
+
+.rating-line{
+    width: 200px;
+    margin: 10px 30px;
+    border-color:#7f7f804d;
+}
+
+.rating p{
+    font-size: 10px;
+    color: #7f7f80;
+}
+
+.test{
+    font-size: 13px;
+}
+
+.row-1, .row-2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.course-pic:hover{
+    transform: scale(1.1)
+}
