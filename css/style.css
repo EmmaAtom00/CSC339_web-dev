@@ -197,3 +197,52 @@ section{
 .course-pic:hover{
     transform: scale(1.1)
 }
+
+
+
+/*---------- Grace ----------*/
+
+.Find-course{
+    background: #ecf0fb;
+
+}
+
+.atom video{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; 
+    margin-left: 150px;
+    object-fit: cover;
+}
+.wrapper{
+    margin: 0em 8em;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper h2{
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+.wrapper hr{
+    border: 2px solid #2774ea;
+    width: 120px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+.wrapper p{
+    line-height: 25px;
+    color: #7f7f80;
+    font-size: 13.5px;
+    margin-bottom: 35px;
+}
+.wrapper a{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2774ea;
+    text-decoration: none;
+}
