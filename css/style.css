@@ -5,7 +5,7 @@
 }
 
 .blog-div{
-    background-color: #2775ea47;
+    background-color: #ecf0fb;
     height: auto;
     padding: 5em 8em;
     display: flex;
@@ -175,7 +175,7 @@ section{
 
 .rating-line{
     width: 200px;
-    margin: 10px 30px;
+    margin: 5px 30px;
     border-color:#7f7f804d;
 }
 
@@ -237,6 +237,7 @@ section{
     color: #7f7f80;
     font-size: 13.5px;
     margin-bottom: 35px;
+    text-align: justify;
 }
 .wrapper a{
     padding: 12px 20px;
