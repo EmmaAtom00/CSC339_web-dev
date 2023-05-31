@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .blog-div {
     background-color: #ECF0FB;
     height: auto;
@@ -38,9 +39,10 @@
 /*make horizontal blue line */
 .blue-line {
     content: '';
-    width: 7%;
-    height: 0.2em;
+    width: 120px;
+    height: 3.2px;
     background-color: #2775ea;
+    border-radius: 2px;
 }
 
 .icon {
@@ -60,17 +62,17 @@
 .blog {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     border-radius: 0.5em;
     box-shadow: 0 0 0.5em #0000001a;
     background-color: #fff;
-    width: 25em;
+    width: 100%;
+    height: auto;
 }
 
 .blog img {
-    width: 20em;
-    height: 100%;
+    width: 25em;
+    height: 65%;
     object-fit: cover;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
@@ -81,12 +83,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.7em;
+    margin-bottom: -6em;
 }
 
 .blog-img-text div {
     display: flex;
     gap: 0.9em;
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: #a1a1a1;
     font-weight: 700;
 }
@@ -101,15 +104,187 @@
         padding: 2em;
     }
 
-    .arrow-div{
+    .arrow-div {
         display: none;
     }
 
     .blog-img {
         overflow: auto;
+        width: 25em;
+        height: 100%;
+    }
+
+    .blog-img-text {
+        width: 25em;
+        padding: 1em;
+    }
+
+    .blog-img-text h3{
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .blog-img-text #small-text{
+        font-size: 0.8em;
+        font-weight: 500;
     }
 
     .blue-line {
         width: 20%;
     }
+}
+
+/* Atom css */
+
+section {
+    margin: 0em 8em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0em;
+}
+
+#course-header {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.line {
+    width: 120px;
+    border: 2px solid #2774ea;
+}
+
+#allcourse {
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #2774ea;
+    padding: 20px 30px;
+    background: transparent;
+    border-radius: 10px;
+    color: #2774ea;
+}
+
+#allcourse:hover {
+    background: #2774ea;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/*-------------- Courses images --------------*/
+
+.course-pic {
+    background: #fff;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 350px;
+}
+
+
+.c-pic {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+
+.course-pic p {
+    margin: 10px 30px;
+}
+
+.hero {
+    font-size: 19px;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating img {
+    width: 20%;
+    margin-left: 30px;
+    object-fit: contain;
+}
+
+.rating-line {
+    width: 200px;
+    margin: 5px 30px;
+    border-color: #7f7f804d;
+}
+
+.rating p {
+    font-size: 10px;
+    color: #7f7f80;
+}
+
+.test {
+    font-size: 13px;
+}
+
+.row-1, .row-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.course-pic:hover {
+    transform: scale(1.1)
+}
+
+
+
+/*---------- Grace ----------*/
+
+.Find-course {
+    background: #ecf0fb;
+}
+
+.atom video {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 150px;
+    object-fit: cover;
+}
+
+.wrapper {
+    margin: 0em 8em;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.wrapper hr {
+    border: 2px solid #2774ea;
+    width: 120px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.wrapper p {
+    line-height: 25px;
+    color: #7f7f80;
+    font-size: 13.5px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+.wrapper a {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2774ea;
+    text-decoration: none;
 }
