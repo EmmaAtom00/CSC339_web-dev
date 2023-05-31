@@ -132,7 +132,7 @@ section{
 #allcourse:hover{
     background: #2774ea;
     color: #fff;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 /*-------------- Courses images --------------*/
@@ -152,6 +152,7 @@ section{
     object-fit: cover;
     height: 200px;
     width: 100%;
+    transition: 0.1s;
 }
 
 
@@ -246,4 +247,51 @@ section{
     color: #fff;
     background-color: #2774ea;
     text-decoration: none;
+}
+
+/*------------ Aminat css -----------*/
+
+.subs{
+    margin: 2em 8em;
+}
+
+.subscribe{
+    text-align: center;
+    margin:30px 0px;
+}
+
+.subscribe h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.subscribe p{
+    font-size: 13px;
+    color: #7f7f80;
+    padding: 0px 200px 0px 200px;
+}
+#email{
+    align-items: center;
+    border: 0px solid #2774ea;
+    border-radius: 2px;
+    padding: 12px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(247, 245, 245, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form a{
+    text-decoration: none;
+    font-size: 10px;
+    margin-left: 1.25px;
+    background: #2774ea;
+    padding: 12px 14px;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
