@@ -178,9 +178,9 @@ section {
     background: #fff;
     border-radius: 10px;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 350px;
-    height: 350px;
+    box-shadow: #00000023 0px 8px 24px;
+    width: 30%;
+    height: 50%;
 }
 
 
@@ -212,7 +212,7 @@ section {
 }
 
 .rating-line {
-    width: 200px;
+    width: 70%;
     margin: 5px 30px;
     border-color: #7f7f804d;
 }
@@ -293,46 +293,43 @@ section {
 /*------------ Aminat css -----------*/
 
 .subs{
-    margin: 2em 8em;
-}
-
-.subscribe{
     text-align: center;
-    margin:30px 0px;
+    margin: 5% 8em;
+    align-items: center;
 }
 
 .subscribe h2{
-    margin-bottom: 20px;
     font-size: 30px;
 }
 
 .subscribe p{
+    margin: 20px 0 30px 0;
     font-size: 13px;
     color: #7f7f80;
-    padding: 0px 200px 0px 200px;
-}
-#email{
-    align-items: center;
-    border: 0px solid #2774ea;
-    border-radius: 2px;
-    padding: 12px 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(247, 245, 245, 0.034), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.form a{
-    text-decoration: none;
-    font-size: 10px;
-    margin-left: 1.25px;
-    background: #2774ea;
-    padding: 12px 14px;
-    color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .form{
-    align-items: center;
-    display: flex;
+    box-shadow: #00000023 0px 8px 24px;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+#email{
+    border: 0px;
+    border-radius: 2px;
+    padding: 12px 50px;
+    
+}
+
+.form a{
+    border: 0px solid #2774ea;
+    background: #2774ea;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 12px;
+    margin-left: -5px;
+    font-size: 14px;
+    border-radius: 3px;
 }
