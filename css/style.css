@@ -314,13 +314,18 @@ section {
     display: flex;
     align-items: center;
     width: max-content;
+    margin: auto;
+    text-align: center;
 }
 
 #email{
-    border: 0px;
+    border: none;
     border-radius: 2px;
     padding: 12px 50px;
-    
+}
+
+input:focus{
+    outline: none;
 }
 
 .form a{
