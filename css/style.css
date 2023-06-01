@@ -310,10 +310,7 @@ section {
 
 .form{
     box-shadow: #00000023 0px 8px 24px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: max-content;
+    width: fit-content;
     margin: auto;
     text-align: center;
 }
