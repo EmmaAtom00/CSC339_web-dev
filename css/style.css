@@ -332,6 +332,19 @@ section {
     align-items: center;
 }
 
+.flex-display{
+    display: flex;
+    align-items: center;
+    margin-top: -12px;
+    margin-left: -1em;
+    height: auto;
+}
+
+.flex-display img{
+    width: 80px;
+    height: auto;
+}
+
 .part {
     display: flex;
     gap: 0.5em;
