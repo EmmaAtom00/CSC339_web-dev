@@ -119,12 +119,12 @@
         padding: 1em;
     }
 
-    .blog-img-text h3{
+    .blog-img-text h3 {
         font-size: 1em;
         font-weight: 600;
     }
 
-    .blog-img-text #small-text{
+    .blog-img-text #small-text {
         font-size: 0.8em;
         font-weight: 500;
     }
@@ -287,4 +287,46 @@ section {
     color: #fff;
     background-color: #2774ea;
     text-decoration: none;
+}
+
+.footer-wrapper {
+    background-color: #ECF0FB;
+    margin-top: 5em;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    height: 200px;
+}
+
+#big-text {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+
+.big-bold-gray-text {
+    color: gray;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+#small-gray-text {
+    color: gray;
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.items-flex {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
 }
