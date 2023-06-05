@@ -11,4 +11,4 @@ Web development assignment with Html and Css
 * Lawal Yussuf Opeyemi
 * Olarewaju Emmanuel
 * Adetunji Aishat Opeyemi
-* Adebisi Aminatlll
+* Adebisi Aminat
