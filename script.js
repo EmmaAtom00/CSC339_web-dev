@@ -9,3 +9,10 @@ function scrollImage(direction) {
     }
   }
   
+
+const open = document.querySelector('.seemore-text');
+const nav = document.querySelector('.row-2');
+
+open.onclick = function() {
+    nav.classList.toggle("active");
+}
