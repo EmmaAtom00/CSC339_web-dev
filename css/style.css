@@ -191,7 +191,7 @@ background-color: #fff;
     padding: 5em 8em;
     display: flex;
     flex-direction: column;
-    margin-top: 5em;
+    /* margin-top: 5em; */
 }
 
 .blog-text {
@@ -674,5 +674,209 @@ input:focus{
     padding: 12px 12px;
     margin-left: -5px;
     font-size: 14px;
-    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
+
+@media only screen and (max-width: 1080px){
+    .subs{
+        margin: 5% 2em;
+    }
+
+    .wrapper {
+        margin: 5% 2em;
+    }
+
+    .atom video {
+        display: none;
+    }
+}
+
+
+/* yussuf css */
+
+
+.blogg-div{
+    /* background-color: #ecf0fb;*/
+     height: auto;
+     padding: 5em 8em;
+     display: flex;
+     flex-direction: column;
+     /* margin-top: 5em; */
+ }
+ 
+ .blogg-text{
+     font-size: 1.5em;
+     font-weight: 600;
+ }
+ 
+ .thick-div{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     align-items: center;
+     margin-top: 0.5em;
+ }
+ 
+ .row-div{
+     display: flex;
+     gap: 0.4em;
+ }
+ 
+ .icon{
+     cursor: pointer;
+ }
+ 
+ /*make horizontal blue line */
+ .blue-line{
+     content: '';
+     width: 7%;
+     height: 0.2em;
+     background-color: #2775ea;
+ }
+ 
+ .icon{
+     color: #2775ea;
+ }
+ 
+ .blogg-img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: flex;
+     margin-top: 2.5em;
+     gap: 2em;
+     overflow: hidden;
+ }
+ 
+ .blog{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 0.5em;
+     box-shadow: 0 0 0.5em #0000001a;
+     background-color: #fff;
+     width: 25em;
+ }
+ 
+ .blog img{
+     width: 20em;
+     height: 100%;
+     object-fit: cover;
+     border-top-right-radius: 0.5em;
+     border-top-left-radius: 0.5em;
+ }
+ 
+ .blog-img-text{
+     padding: 1.5em;
+     display: flex;
+     flex-direction: column;
+     gap: 0.7em;
+ }
+ 
+ .blog-img-text div{
+     display: flex;
+     gap: 0.9em;
+     font-size: 0.8em;
+     color: #a1a1a1;
+     font-weight: 700;
+ }
+ 
+ .blog-img-text a{
+     text-decoration: none;
+     color: #2775ea;
+ }
+ 
+ .Students-Feedback{
+         background: #fff;
+         align-items: center;
+         position: relative;
+         padding-bottom: 40px;
+         overflow: hidden;
+         
+         
+ }
+ .washington{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /*margin: 70px 100px;*/
+     width: 100vw;
+ }
+ 
+ .washington h2{
+     margin-bottom: 20px;
+     font-size: 36px;
+     white-space: nowrap;
+ }
+ .washington hr{
+     border: 2px solid #2774ea;
+     width: 40px;
+     margin-bottom: 30px;
+     border-radius: 50px;
+ }
+ .washington p{
+     line-height: 30px;
+     color: #7f7f80;
+     font-size: 16px;
+     
+ }
+ .image-container{
+     margin-left: 50px;
+ }
+
+ .img-feedback{
+     border-radius: 10px;
+     height: 450px;
+     width: 400px;
+     object-fit: cover;
+     /*border: 2px solid red;*/
+         
+ }
+ .text-container{
+     padding-left: 50px;
+     /*  border: 2px solid red;*/
+     
+     
+ }
+ .rating-icon{
+     width: 90px;
+ }
+ .student-info{
+     display: flex;
+ }
+ .student-info img{
+     width: 60px;
+     height: 60px;
+     border-radius: 100px;
+     object-fit: cover;
+ }
+ .student-text{
+     margin-left: 20px;
+ }
+ 
+ .indicators{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+ }
+ 
+ .controls button{
+     background: none;
+     border: none;
+     outline: none;
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     border: 2px solid #043677;
+     cursor: pointer;
+     
+     transition: .5s;
+ }
+ 
+ button.active{
+     width: 40px;
+     border-radius: 50px;
+     background: #fff;
+ }
