@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -286,40 +286,6 @@ ul li a:hover {
     color: #2775ea;
 }
 
-@media only screen and (max-width: 480px) {
-    .blog-div {
-        padding: 2em;
-    }
-
-    .arrow-div {
-        display: none;
-    }
-
-    .blog-img {
-        overflow: auto;
-        width: 25em;
-        height: 100%;
-    }
-
-    .blog-img-text {
-        width: 25em;
-        padding: 1em;
-    }
-
-    .blog-img-text h3 {
-        font-size: 1em;
-        font-weight: 600;
-    }
-
-    .blog-img-text #small-text {
-        font-size: 0.8em;
-        font-weight: 500;
-    }
-
-    .blue-line {
-        width: 20%;
-    }
-}
 
 /* Atom css */
 
@@ -425,73 +391,6 @@ section {
 
 .seemore {
     display: none;
-}
-
-
-@media only screen and (max-width: 720px) {
-    section {
-        margin: 2em;
-    }
-
-    .row-1, .row-2 {
-        display: unset;
-    }
-
-    .course-pic {
-        margin: auto;
-        justify-content: center;
-        width: 80%;
-        height: 100%;
-        margin-bottom: 30px;
-    }
-
-    #allcourse {
-        font-size: .5em;
-    }
-
-    .course-pic p {
-        font-size: 12px;
-    }
-
-    .row-2 {
-        transform: translateY(100%);
-        transition: 0.5s ease-in-out;
-        position: absolute;
-        opacity: 0;
-        z-index: -1;
-    }
-
-    .seemore {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        margin-bottom: 20px;
-        cursor: pointer;
-        font-size: small;
-        color: #2774ea;
-    }
-
-    #seemore-img {
-        width: 10%;
-        float: right;
-        animation: moveArrow 1s alternate-reverse infinite;
-    }
-
-    .row-2.active {
-        transform: translateY(0);
-        position: unset;
-        opacity: unset;
-    }
-
-    @keyframes moveArrow {
-        from {
-            transform: translateY(-10px);
-        }
-
-        to {
-            transform: translateY(0);
-        }
-    }
 }
 
 
@@ -608,6 +507,7 @@ section {
     align-items: center;
     width: 45px;
     height: auto;
+    object-fit: contain;
 }
 .part img{
     width: 100%;
@@ -708,22 +608,18 @@ input:focus {
     border-bottom-right-radius: 3px;
 }
 
-@media only screen and (max-width: 1080px) {
-    .subs {
-        margin: 5% 2em;
-    }
-
-    .wrapper {
-        margin: 5% 2em;
-    }
-
-    .atom video {
-        display: none;
-    }
-}
-
 
 /* yussuf css */
+
+.yuhead {
+    margin: 5% 8em;
+    margin-bottom: unset;
+}
+
+.yuhead h1 {
+    margin-bottom: 20px;
+}
+
 .blogg-div {
     height: auto;
     width: 100vw;
@@ -781,9 +677,6 @@ input:focus {
     overflow: hidden;
 }
 
-.image-container{
-}
-
 .image-container img{
     width: 550px;
     height: 500px;
@@ -791,7 +684,7 @@ input:focus {
 }
 
 .feedback-wrapper{
-    padding: 5em;
+    margin: 0 4em;
 }
 
 .washington {
@@ -878,4 +771,157 @@ button.active {
     width: 40px;
     border-radius: 50px;
     background: #fff;
+}
+
+
+/* Responsiveness */
+
+/* marvelous css */
+@media only screen and (max-width: 480px) {
+    .blog-div {
+        padding: 2em;
+    }
+
+    .arrow-div {
+        display: none;
+    }
+
+    .blog-img {
+        overflow: auto;
+        width: 25em;
+        height: 100%;
+    }
+
+    .blog-img-text {
+        width: 25em;
+        padding: 1em;
+    }
+
+    .blog-img-text h3 {
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .blog-img-text #small-text {
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+
+    .blue-line {
+        width: 20%;
+    }
+}
+
+/* Aminat css */
+@media only screen and (max-width: 720px) {
+    .subs {
+        margin: 5% 2em;
+    }
+
+    .wrapper {
+        margin: 5% 2em;
+    }
+
+    .atom video {
+        display: none;
+    }
+
+    /* joan */
+    .whole {
+        margin: 2em;
+        gap: 2.5rem;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .part {
+        display: block;
+    }
+
+    .part img {
+        width: 45px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .badge-div {
+        align-items: center;
+    }
+
+
+/* Atom css media query */
+@media only screen and (max-width: 720px) {
+    section {
+        margin: 2em;
+    }
+
+    .row-1, .row-2 {
+        display: unset;
+    }
+
+    .course-pic {
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+        height: 45%;
+        margin-bottom: 30px;
+    }
+
+    #allcourse {
+        font-size: .5em;
+    }
+
+    .course-pic p {
+        font-size: 12px;
+    }
+
+    .row-2 {
+        transform: translateY(100%);
+        transition: 0.5s ease-in-out;
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .seemore {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-bottom: 20px;
+        cursor: pointer;
+        font-size: small;
+        color: #2774ea;
+    }
+
+    #seemore-img {
+        width: 10%;
+        float: right;
+        animation: moveArrow 1s alternate-reverse infinite;
+    }
+
+    .row-2.active {
+        transform: translateY(0);
+        position: unset;
+        opacity: unset;
+    }
+
+    @keyframes moveArrow {
+        from {
+            transform: translateY(-10px);
+        }
+
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    /* yussuf */
+
+    .yuhead {
+        margin-left: 2em;
+    }
+
+    .feedback-wrapper {
+        margin: 0 2em;
+    }
 }
