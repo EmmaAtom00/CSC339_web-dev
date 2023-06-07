@@ -604,7 +604,7 @@ section {
 
 .part {
     display: flex;
-    gap: 0.5em;
+    justify-content: space-around;
     align-items: center;
     width: 45px;
     height: auto;
@@ -632,9 +632,9 @@ section {
 
 .whole {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-top: 2em;
+    /* margin-top: 2em; */
+    margin: 2em 8em;
 }
 
 #gray-small-text {
