@@ -848,9 +848,10 @@ button.active {
         align-items: center;
     }
 
+}
 
 /* Atom css media query */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px){
     section {
         margin: 2em;
     }
@@ -915,6 +916,9 @@ button.active {
         }
     }
 
+    /* footer james*/
+
+
     /* yussuf */
 
     .yuhead {
@@ -923,5 +927,6 @@ button.active {
 
     .feedback-wrapper {
         margin: 0 2em;
+
     }
 }
