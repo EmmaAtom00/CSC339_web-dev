@@ -274,6 +274,17 @@ span{
     cursor: pointer;
 }
 
+.align-checkbox{
+    display: flex;
+    align-items: center;
+   
+}
+
+.align-checkbox p{
+    color: #777;
+    font-size: 12px;
+}
+
 /*make horizontal blue line */
 .blue-line {
     content: '';
