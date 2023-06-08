@@ -30,6 +30,7 @@ nav{
 }
 .logo span{
     font-size: 2.5em;
+    margin-top: -0.1em;
 }
 span{
     color: #df6d10;
@@ -95,7 +96,7 @@ span{
     min-height: 100%;
     width: auto;
     height: auto;
-    
+    filter: brightness(0.4);
 }
 .content2{
     position: absolute;
@@ -104,6 +105,10 @@ span{
     width: 94%;
     max-width: 700px;
     color: white;
+}
+.content2 span{
+    font-size: 1.3em;
+    color: #fff;
 }
 .content2 h4{
     font-weight: 600;
@@ -232,8 +237,9 @@ span{
 
 .shape-img{
     position: absolute;
-    right: 10%;
+    right: 7%;
     top: 10%;
+    width:650px;
     margin: 5% auto;
 }
 

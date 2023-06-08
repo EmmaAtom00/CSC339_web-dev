@@ -144,10 +144,10 @@ ul li a:hover {
 }
 
 .content {
-    width: 1200px;
+    /* width: 1200px;
     height: auto;
     margin: auto;
-    color: #fff;
+    color: #fff; */
 }
 
 .content .par {
