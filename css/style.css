@@ -148,7 +148,6 @@ ul li a:hover {
     height: auto;
     margin: auto;
     color: #fff;
-    position: relative;
 }
 
 .content .par {
@@ -475,6 +474,17 @@ section {
     line-height: 2em;
 }
 
+.big-bold-gray-text a{
+    text-decoration: none;
+    color: gray;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #2774ea;
+    transform: translate(0, -5px);
+  }
+
 #small-gray-text {
     color: gray;
     font-size: 15px;
@@ -508,6 +518,7 @@ section {
     width: 45px;
     height: auto;
     object-fit: contain;
+    gap: 1em;
 }
 .part img{
     width: 100%;
@@ -533,7 +544,6 @@ section {
 .whole {
     display: flex;
     justify-content: space-around;
-    /* margin-top: 2em; */
     margin: 2em 8em;
 }
 
@@ -809,6 +819,33 @@ button.active {
 
     .blue-line {
         width: 20%;
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        height: auto;
+        padding: 2em 0em;
+        align-items: center;
+    }
+
+    .footer-items{
+        gap: 0.8em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-display{
+        justify-content: center;
+    }
+
+    #small-gray-text{
+        text-align: center;
+        letter-spacing: 0em;
+        margin-top: -1em;
+    }
+
+    .big-bold-gray-text{
+        text-align: center;
     }
 }
 
