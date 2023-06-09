@@ -30,6 +30,7 @@ nav{
 }
 .logo span{
     font-size: 2.5em;
+    margin-top: -0.1em;
 }
 span{
     color: #df6d10;
@@ -95,7 +96,7 @@ span{
     min-height: 100%;
     width: auto;
     height: auto;
-    
+    filter: brightness(0.4);
 }
 .content2{
     position: absolute;
@@ -105,16 +106,13 @@ span{
     max-width: 700px;
     color: white;
 }
+.content2 span{
+    font-size: 1.3em;
+    color: #fff;
+}
 .content2 h4{
     font-weight: 600;
-    /* border: 2px solid blue; */
-    /* font-family: 'Helvetica 65 Medium', sans-serif;  */
-    /* font-family: 'Helvetica 25 UltraLight', sans-serif; */
-    /* font-family: 'Helvetica 35 Thin', sans-serif; */
-    /* font-family: 'Helvetica 45 Light', sans-serif; */
     font-family: 'Helvetica 55 Roman', sans-serif;
-    /* font-family: 'Helvetica 65 Medium', sans-serif; */
-    
 }
 .content2 a{
     background-color: #b3ff00;
@@ -232,8 +230,9 @@ span{
 
 .shape-img{
     position: absolute;
-    right: 10%;
+    right: 7%;
     top: 10%;
+    width:650px;
     margin: 5% auto;
 }
 
@@ -290,12 +289,12 @@ span{
     content: '';
     width: 120px;
     height: 3.2px;
-    background-color: #2775ea;
+    background-color: #2e6a60;
     border-radius: 2px;
 }
 
 .icon {
-    color: #2775ea;
+    color: #2e6a60;
 }
 
 .blog-img {
@@ -345,7 +344,7 @@ span{
 
 .blog-img-text a {
     text-decoration: none;
-    color: #2775ea;
+    color: #2e6a60;
 }
 
 @media only screen and (max-width: 480px) {

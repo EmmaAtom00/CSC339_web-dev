@@ -1,95 +1,117 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC 339 web</title>
+    <title>E-Learn | Learn Professional courses for free</title>
+    <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- poppins from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!------------ Daniel worked here ------------>
-    <div class="navbar">
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                <path
-                    d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z">
-                </path>
-            </svg>
-            <h2 class="logo-text">E-LEARN</h2>
-        </div>
+    <div class="header2">
+        <video autoplay loop class="back-video" src="video/teachingVid.mp4" muted plays-inline>
+        </video>
 
-        <div class="menu">
+        <nav class="nav-links">
+            <h1 class="logo"><span>e</span>-LEARN</h1>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COURSES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Student</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
-        </div>
 
-        <div class="nav-btn">
-            <a href="#" class="nav-btn1">Login</a>
-            <a href="#" class="nav-btn2">Sign Up</a>
-        </div>
+            <a href="" class="nav-btn">Sign Up</a>
+        </nav>
 
-
-    </div>
-    <div class="main">
         <div class="content">
-            <h1>Find Our Best Online<br>Courses & Become <br>the Master</h1>
-            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque
-                expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus
-                <br> a quae totam ipsa illum minus laudantium?
-            </p>
+            <h2>Explore your <span>CREATIVITY</span></h2>
+            <h2>With hands-on <span>certifications </span></h2>
+        </div>
+        <div class="content2">
+            <h4><span>e</span>-learn provides online courses for </h4>
+            <h4>Senior Secondary school students in</h4>
+            <h4>Nigeria in area of career planning and</h4>
+            <h4>education</h4>
 
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Search your courses">
-                <a href="#"> <button class="btn">Search</button></a>
+            <a class="get-started">Get Started</a>
+        </div>
+
+        <div class="shape-img">
+            <img src="./images/eadvise-removebg.png" alt="">
+        </div>
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Register</button>
+                <button type="button" class="toggle-btn" onclick="register()">Login</button>
             </div>
+            <div class="social-icons">
+                <img src="./images/fb.png" alt="">
+                <img src="./images/gp.png" alt="">
+                <img src="./images/tw.png" alt="">
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Enter Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <div class="align-checkbox">
+                    <input type="checkbox" class="check-box">
+                    <p>Remember Password</p>
+                </div>
 
+                <a class="submit-btn" href="./dashboard2.html">Login</a>
+            </form>
+            <form action="" id="register" class="input-group">
+                <!-- <input type="text" class="input-field" placeholder="User Id" required> -->
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <div class="align-checkbox">
+                    <input type="checkbox" class="check-box">
+                    <p>I agree to the terms and conditions</p>
+                </div>
 
-
+                <a class="submit-btn" href="./">Register</a>
+            </form>
         </div>
     </div>
 
     <!-- Joan worked here  -->
-
     <div class="whole">
         <div class="part">
-            <img src="images/social_leaderboard_FILL0_wght400_GRAD0_opsz48.svg" class="img" />
+            <img src="images/medal.svg" class="img" />
             <div class="badge-div">
-                <p> <strong>20,000+</strong></p>
+                <p id="first-child">20,000+</p>
                 <p id="gray-small-text">Special courses</p>
             </div>
         </div>
 
         <div class="part">
-            <img src="images/instructoricon.png" class="img" />
+            <img src="images/student.svg" class="img" />
             <div class="badge-div">
-                <p><strong>480,00+</strong></p>
+                <p id="first-child">480,000+</p>
                 <p id="gray-small-text">Enrolled Student</p>
             </div>
         </div>
 
         <div class="part">
-            <img src="images/Studenticon.png" class="img" />
+            <img src="images/chalkboard-teacher.svg" class="img" />
             <div class="badge-div">
-                <p><strong>4,000+</strong></p>
+                <p id="first-child">4,000+</p>
                 <p id="gray-small-text">Expert Instructor</p>
             </div>
         </div>
     </div>
-
 
     <!------------ Atom worked here ------------>
     <section>
@@ -98,7 +120,7 @@
                 <p id="course-header"><strong>Our Popular Courses</strong></p>
                 <hr class="line">
             </div>
-            <a href="all-course.html" id="allcourse">ALL COURSES</a>
+            <a href="all-courses/all-courses.html" id="allcourse">ALL COURSES</a>
         </div>
 
         <!---------------------- Row 1 ---------------------->
@@ -115,36 +137,38 @@
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The BSc (Hons) Computer Science with Artificial Intelligence with Foundation Year course
+                    is aimed at developing strong computing skills in artificial intelligence.</p>
             </div>
 
-            <!------------ Mathematics ----------->
+            <!------------ Cyber Security----------->
             <div class="course-pic">
                 <img src="images/course2.jpg" alt="not supported" class="c-pic">
-                <p class="hero"><strong>Mathematics</strong></p>
+                <p class="hero"><strong>Cyber Security</strong></p>
 
                 <div class="rating">
                     <img src="images/rating.png" alt="not supportede" id="rate">
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The BSc Cyber Security course is designed to equip you with state-of-the-art technical
+                    knowledge, intellectual know-how, management capabilities and practical skills that will enable you
+                    to succeed in meeting the cyber security challenges facing modern organisations.</p>
             </div>
 
-            <!------------ Physics ----------->
+            <!------------ User Experience Design ----------->
             <div class="course-pic">
                 <img src="images/course3.jpg" alt="not supported" class="c-pic">
-                <p class="hero"><strong>Physics</strong></p>
+                <p class="hero"><strong>User Experience Design</strong></p>
 
                 <div class="rating">
                     <img src="images/rating.png" alt="not supportede" id="rate">
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The MSc User Experience Design course will provide you with in-depth theoretical
+                    knowledge and hands-on practical experience in designing, developing, and evaluating digital
+                    products across a range of platforms and state-of-the-art technologies.</p>
             </div>
 
         </div>
@@ -153,46 +177,49 @@
 
         <div class="row-2">
 
-            <!------------ Statistics ----------->
+            <!------------ Language and communication ----------->
             <div class="course-pic tale">
                 <img src="images/course4.jpg" alt="not supported" class="c-pic">
-                <p class="hero"><strong>Statistics</strong></p>
+                <p class="hero"><strong>Language and Communication</strong></p>
 
                 <div class="rating">
                     <img src="images/rating.png" alt="not supportede" id="rate">
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The module explores the theories and analytical tools from sociolinguistics and
+                    pragmatics which are applicable to naturally occurring conversation and the use of language in the
+                    media.</p>
             </div>
 
-            <!------------ Chemistry ----------->
+            <!------------ Big Data Analytics----------->
             <div class="course-pic tale">
                 <img src="images/course5.jpg" alt="not supported" class="c-pic">
-                <p class="hero"><strong>Chemistry</strong></p>
+                <p class="hero"><strong>Big Data Analytics</strong></p>
 
                 <div class="rating">
                     <img src="images/rating.png" alt="not supportede" id="rate">
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The MSc Big Data Analytics course will provide you with an insight into areas of data
+                    mining, big data management, and advanced statistics. You will develop in-depth practical skills
+                    through using tools and techniques from the forefront of the emerging field of data analytics.</p>
             </div>
 
-            <!------------ Economics ----------->
+            <!------------ Business Information Technology ----------->
             <div class="course-pic tale">
                 <img src="images/course6.jpg" alt="not supported" class="c-pic">
-                <p class="hero"><strong>Economics</strong></p>
+                <p class="hero"><strong>Business Information Technology</strong></p>
 
                 <div class="rating">
                     <img src="images/rating.png" alt="not supportede" id="rate">
                     <p>4.5 (1245 rating)</p>
                 </div>
                 <hr class="rating-line">
-                <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor enim iste non
-                    voluptatibus quaerat eius facilis.</p>
+                <p class="test">The BSc (Hons) Business Information Technology (BIT) course will provide you with
+                    knowledge and skills that bridge the gap between IT and Business to drive digital transformation,
+                    innovation and growth.</p>
             </div>
 
         </div>
@@ -204,19 +231,20 @@
     </section>
 
     <!------------ Grace worked here ------------>
-
     <div class="Find-course">
         <div class="wrapper">
             <div>
                 <h2> Find Your Course That<br> Makes Bright Future</h2>
                 <hr>
-                <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+                <p>Are you looking for a course that will help you build a bright future? At our school, we offer a wide
+                    range of courses that can help you achieve your goals. Whether you're interested in business,
+                    healthcare, technology, or something else entirely, we have a course that's right for you.
+                    Our courses are taught by experienced and qualified instructors who are passionate about helping
+                    students succeed. We also offer a variety of resources to help you learn, including online learning
+                    tools, tutoring, and career counseling.
+                    We know that choosing the right course can be a daunting task. That's why we're here to help. Our
+                    team of advisors can help you explore your interests and find the perfect course for you.
+                    So what are you waiting for? Start your journey to a bright future today!</p>
                 <div class="Get">
                     <a href="#">Get Started</a>
                 </div>
@@ -231,8 +259,11 @@
     </div>
 
     <!-- Yussuf worked here -->
-
     <div class="blogg-div">
+        <div class="yuhead">
+            <h1>Testimonies</h1>
+            <hr class="line">
+        </div>
         <div class="feedback-wrapper">
             <div class="blogg-img">
                 <div class="washington">
@@ -248,15 +279,15 @@
                             <img src="images/aleksandar.jpg" alt="">
                             <div class="student-text">
                                 <h3>Washington Sundair</h3>
-                                <p>student of E-learn</p>
+                                <p>Student of User Experience Design</p>
                             </div>
                         </div>
-                        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>I want to commend the website team for creating such a user-friendly and intuitive school
+                            website. Navigating through the different sections and finding information has been a
+                            breeze. Well done! and the content on the school website is incredibly relevant and
+                            informative. It covers all the necessary details about courses, extracurricular activities,
+                            and resources. It's evident that a lot of effort has been put into providing valuable
+                            information for students like me.</p>
 
                         <div class="indicators">
                             <img src="images/rating.png" alt="rating" class="rating-icon">
@@ -275,17 +306,19 @@
                         <div class="student-info">
                             <img src="images/joshua.jpg" alt="">
                             <div class="student-text">
-                                <h3>Washington Sundair</h3>
-                                <p>student of E-learn</p>
+                                <h3>Rejoice Nana</h3>
+                                <p>Student of Computer Science</p>
                             </div>
 
                         </div>
-                        <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>I'm thoroughly impressed with the visual appeal of the website. The choice of colors and
+                            fonts creates a vibrant and engaging atmosphere. It's a pleasure to visit the website and
+                            explore its content, I also appreciate the functionality of the website, particularly the
+                            interactive features such as the event calendar. It helps me stay organized and informed
+                            about upcoming activities and deadlines. It's a valuable tool that enhances my overall
+                            school experience. I highly recommend this course for all budding Cyber Security. Even
+                            people with no prior knowledge of any visualization tools can become a master after
+                            completing this course.</p>
 
                         <div class="indicators">
                             <img src="images/rating.png" alt="rating" class="rating-icon">
@@ -294,6 +327,7 @@
 
                 </div>
             </div>
+
             <div class="thick-div">
                 <div class="row-div">
                     <div>
@@ -309,7 +343,7 @@
 
     </div>
 
-    <!------------ Marvelous worked here ------------>
+    <!------------ Marvellous worked here ------------>
     <div class="blog-div">
         <div class="blog-text">
             <h3>Our Latest Blog</h3>
@@ -337,7 +371,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post One</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p id="small-text">e-Learn provides a library which gives students access to vast array of
+                        digitalized articles..</p>
                     <a href="#">READ MORE...</a>
                 </div>
             </div>
@@ -349,7 +384,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post Two</h3>
-                    <p id="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                    <p id="small-text">Our classes are small and every student has a program advisor from the first day
+                        of classes..
                     </p>
                     <a href="#">READ MORE...</a>
                 </div>
@@ -362,7 +398,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post Three</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p id="small-text">e-Learn is an accredited, online university. Our academics leadership include
+                        scholars..</p>
                     <a href="#">READ MORE...</a>
                 </div>
             </div>
@@ -374,7 +411,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post Four</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p id="small-text">e-Learn is an 100% online university. Control your schedule by studying
+                        anytime...</p>
                     <a href="#">READ MORE...</a>
                 </div>
             </div>
@@ -386,7 +424,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post Five</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p id="small-text">Each student has the opportunity to have one on one interaction with his/her
+                        advisor..</p>
                     <a href="#">READ MORE...</a>
                 </div>
             </div>
@@ -398,7 +437,8 @@
                         <p>4 Comments</p>
                     </div>
                     <h3>Blog Post Six</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <p id="small-text">Our classes are small and every student has a program advisor from the first day
+                        of classes..</p>
                     <a href="#">READ MORE...</a>
                 </div>
             </div>
@@ -409,9 +449,10 @@
     <section class="subs">
         <div class="subscribe">
             <h2>Subscribe Newsletter</h2>
-            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.aperiam?
-                consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                perspiciatis!.</p>
+            <p>You've received this email because you created an account with us and are signed up to receive email
+                updates from e-Learn.
+                Update your email preferences to choose what types of emails you receive.
+                Unsubscribe from all marketing emails..</p>
         </div>
 
         <div class="form">
@@ -420,13 +461,12 @@
         </div>
     </section>
 
-
     <!-- James worked here -->
     <div class="footer-wrapper">
         <div class="footer-items">
             <div class="flex-display">
                 <img src="images/e-book.png" alt="" width="100px" height="auto">
-                <h3 id="big-text">E-LEARN</h3>
+                <h3 id="big-text">e-LEARN</h3>
             </div>
             <p id="small-gray-text">Privacy Policy</p>
 
@@ -437,53 +477,53 @@
         </div>
 
         <div class="footer-items">
-            <h2>Home</h2>
+            <h3>Home</h3>
             <div class="big-bold-gray-text">
-                <p>Home</p>
-                <p>About Us</p>
-                <p>Our Process</p>
-                <p>Services</p>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About Us</a></p>
+                <p><a href="#">Our Process</a></p>
+                <p><a href="#">Services</a></p>
             </div>
         </div>
 
         <div class="footer-items">
-            <h2>Latest Courses</h2>
+            <h3>Latest Courses</h3>
             <div class="big-bold-gray-text">
-                <p>General Science</p>
-                <p>Web Programming</p>
-                <p>Civil Engineering</p>
-                <p>Business Studies</p>
+                <p><a href="#">General Science</a></p>
+                <p><a href="#">Web Programming</a></p>
+                <p><a href="#">Civil Engineering</a></p>
+                <p><a href="#">Business Studies</a></p>
             </div>
         </div>
 
         <div class="footer-items">
-            <h2>Community</h2>
+            <h3>Community</h3>
             <div class="big-bold-gray-text">
-                <p>Go Premium</p>
-                <p>Team Plans</p>
-                <p>Refer a friend</p>
-                <p>Gift Cards</p>
+                <p><a href="#"> Go Premium</a></p>
+                <p><a href="#">Team Plans</a></p>
+                <p><a href="#">Refer a friend</a></p>
+                <p><a href="#">Gift Cards</a></p>
             </div>
         </div>
 
         <div class="footer-items">
-            <h2>Stay Connected</h2>
+            <h3>Stay Connected</h3>
             <div class="big-bold-gray-text">
                 <div class="items-flex">
                     <i class="fa-brands fa-twitter"></i>
-                    <p>Twitter</p>
+                    <a href="#">Twitter</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-instagram"></i>
-                    <p>Instagram</p>
+                    <a href="#">Instagram</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-facebook"></i>
-                    <p>Facebook</p>
+                    <a href="#">Facebook</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-linkedin"></i>
-                    <p>LinkedIn</p>
+                    <a href="#">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -491,7 +531,7 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
+    <script defer src="./js/app.js"></script>
 </body>
 
 </html>
