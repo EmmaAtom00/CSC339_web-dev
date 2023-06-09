@@ -289,12 +289,12 @@ span{
     content: '';
     width: 120px;
     height: 3.2px;
-    background-color: #2775ea;
+    background-color: #2e6a60;
     border-radius: 2px;
 }
 
 .icon {
-    color: #2775ea;
+    color: #2e6a60;
 }
 
 .blog-img {
@@ -344,7 +344,7 @@ span{
 
 .blog-img-text a {
     text-decoration: none;
-    color: #2775ea;
+    color: #2e6a60;
 }
 
 @media only screen and (max-width: 480px) {
