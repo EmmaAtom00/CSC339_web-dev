@@ -30,6 +30,7 @@ nav{
 }
 .logo span{
     font-size: 2.5em;
+    margin-top: -0.1em;
 }
 span{
     color: #df6d10;
@@ -95,26 +96,23 @@ span{
     min-height: 100%;
     width: auto;
     height: auto;
-    
+    filter: brightness(0.4);
 }
 .content2{
     position: absolute;
     left: 7%;
-    top: 60%;
+    top: 50%;
     width: 94%;
     max-width: 700px;
     color: white;
 }
+.content2 span{
+    font-size: 1.3em;
+    color: #fff;
+}
 .content2 h4{
     font-weight: 600;
-    /* border: 2px solid blue; */
-    /* font-family: 'Helvetica 65 Medium', sans-serif;  */
-    /* font-family: 'Helvetica 25 UltraLight', sans-serif; */
-    /* font-family: 'Helvetica 35 Thin', sans-serif; */
-    /* font-family: 'Helvetica 45 Light', sans-serif; */
     font-family: 'Helvetica 55 Roman', sans-serif;
-    /* font-family: 'Helvetica 65 Medium', sans-serif; */
-    
 }
 .content2 a{
     background-color: #b3ff00;
@@ -124,7 +122,7 @@ span{
     padding: 10px 30px;
     border-radius: 2em;
     cursor: pointer;
-    margin: 3.5em;
+    margin: 3.5em 0em;
     position: absolute;
     top: 55%;
 }
@@ -232,8 +230,9 @@ span{
 
 .shape-img{
     position: absolute;
-    right: 10%;
+    right: 7%;
     top: 10%;
+    width:650px;
     margin: 5% auto;
 }
 
@@ -272,6 +271,17 @@ span{
 
 .icon {
     cursor: pointer;
+}
+
+.align-checkbox{
+    display: flex;
+    align-items: center;
+   
+}
+
+.align-checkbox p{
+    color: #777;
+    font-size: 12px;
 }
 
 /*make horizontal blue line */
@@ -370,367 +380,4 @@ span{
     .blue-line {
         width: 20%;
     }
-}
-
-/* Atom css */
-
-section {
-    margin: 0em 8em;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    margin: 3em 0em;
-    align-items: center;
-}
-
-#course-header {
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-
-.line {
-    width: 120px;
-    border: 2px solid #2774ea;
-}
-
-#allcourse {
-    text-decoration: none;
-    font-size: 10px;
-    border: 1px solid #2774ea;
-    padding: 1.5em 2em;
-    background: transparent;
-    border-radius: 10px;
-    color: #2774ea;
-}
-
-#allcourse:hover {
-    background: #2774ea;
-    color: #fff;
-    transition: 0.2s;
-}
-
-/*-------------- Courses images --------------*/
-
-.course-pic {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: #00000023 0px 8px 24px;
-    width: 30%;
-    height: 50%;
-}
-
-
-.c-pic {
-    border-radius: 10px;
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    transition: 0.1s;
-}
-
-
-.course-pic p {
-    margin: 10px 30px;
-}
-
-.hero {
-    font-size: 19px;
-}
-
-.rating {
-    display: flex;
-}
-
-.rating img {
-    width: 20%;
-    margin-left: 30px;
-    object-fit: contain;
-}
-
-.rating-line {
-    width: 70%;
-    margin: 5px 30px;
-    border-color: #7f7f804d;
-}
-
-.rating p {
-    font-size: 10px;
-    color: #7f7f80;
-}
-
-.test {
-    font-size: 13px;
-}
-
-.row-1, .row-2 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.course-pic:hover {
-    transform: scale(1.1)
-}
-
-.seemore {
-    display: none;
-}
-
-
-@media only screen and (max-width: 720px) {
-    section {
-        margin: 2em;
-    }
-    .row-1, .row-2{
-        display: unset;
-    }
-    .course-pic{
-        margin: auto;
-        justify-content: center;
-        width: 80%;
-        height: 100%;
-        margin-bottom: 30px;
-    }
-
-    #allcourse{
-        font-size: .5em;
-    }
-
-    .course-pic p {
-        font-size: 12px;
-    }
-
-    .row-2{
-        transform: translateY(100%);
-        transition: 0.5s ease-in-out;
-        position: absolute;
-        opacity: 0;
-        z-index: -1;
-    }
-    
-    .seemore {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        margin-bottom: 20px;
-        cursor: pointer;
-        font-size: small;
-        color: #2774ea;
-    }
-
-    #seemore-img {
-        width: 10%;
-        float: right;
-        animation: moveArrow 1s alternate-reverse infinite;
-    }
-
-    .row-2.active {
-        transform: translateY(0);
-        position: unset;
-        opacity: unset;
-    }
-    
-    @keyframes moveArrow {
-        from {
-            transform: translateY(-10px);
-        }
-        to {
-            transform: translateY(0);
-        }
-    }
-}
-
-
-/*---------- Grace ----------*/
-
-.Find-course {
-    background: #ecf0fb;
-}
-
-.atom video {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin-left: 150px;
-    object-fit: cover;
-}
-
-.wrapper {
-    margin: 0em 8em;
-    padding-top: 70px;
-    padding-bottom: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.wrapper h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.wrapper hr {
-    border: 2px solid #2774ea;
-    width: 120px;
-    margin-bottom: 30px;
-    border-radius: 50px;
-}
-
-.wrapper p {
-    line-height: 25px;
-    color: #7f7f80;
-    font-size: 13.5px;
-    margin-bottom: 35px;
-    text-align: justify;
-}
-
-.wrapper a {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #2774ea;
-    text-decoration: none;
-}
-
-.footer-wrapper {
-    background-color: #ECF0FB;
-    margin-top: 5em;
-    height: 500px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-items {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2em;
-    height: 200px;
-}
-
-#big-text {
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 0.8em;
-}
-
-.big-bold-gray-text {
-    color: gray;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-    line-height: 2em;
-}
-
-#small-gray-text {
-    color: gray;
-    font-size: 15px;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-}
-
-.items-flex {
-    display: flex;
-    gap: 0.5em;
-    align-items: center;
-}
-
-.flex-display{
-    display: flex;
-    align-items: center;
-    margin-top: -12px;
-    margin-left: -1em;
-    height: auto;
-}
-
-.flex-display img{
-    width: 80px;
-    height: auto;
-}
-
-.part {
-    display: flex;
-    gap: 0.5em;
-    align-items: center;
-}
-
-.badge-div{
-    display:flex ;
-    flex-direction: column;
-}
-
-.whole {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#gray-small-text {
-    font-size: 14px;
-    color: #7f7f80;
-    font-weight: 600;
-}
-#small-text {
-    font-size: 14px;
-    color: #7f7f80;
-    font-weight: 600;
-}
-#small {
-    font-size: 14px;
-    color: #7f7f80;
-    font-weight: 600;
-}
-
-.img{
-    width: 50px;
-    height: auto;
-
-}
-
-/*------------ Aminat css -----------*/
-
-.subs{
-    text-align: center;
-    margin: 5% 8em;
-    align-items: center;
-}
-
-.subscribe h2{
-    font-size: 30px;
-}
-
-.subscribe p{
-    margin: 20px 0 30px 0;
-    font-size: 13px;
-    color: #7f7f80;
-}
-
-.form{
-    box-shadow: #00000023 0px 8px 24px;
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-}
-
-#email{
-    border: none;
-    border-radius: 2px;
-    padding: 12px 50px;
-}
-
-input:focus{
-    outline: none;
-}
-
-.form a{
-    border: 0px solid #2774ea;
-    background: #2774ea;
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 12px;
-    margin-left: -5px;
-    font-size: 14px;
-    border-radius: 3px;
 }

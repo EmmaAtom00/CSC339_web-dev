@@ -1,95 +1,117 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSC 339 web</title>
+    <title>E-Learn | Learn Professional courses for free</title>
+    <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- poppins from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!------------ Daniel worked here ------------>
-    <div class="navbar">
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                <path
-                    d="M224,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H32A16,16,0,0,0,16,64V192a16,16,0,0,0,16,16H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h64a16,16,0,0,0,16-16V64A16,16,0,0,0,224,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z">
-                </path>
-            </svg>
-            <h2 class="logo-text">E-LEARN</h2>
-        </div>
+    <div class="header2">
+        <video autoplay loop class="back-video" src="video/teachingVid.mp4" muted plays-inline>
+        </video>
 
-        <div class="menu">
+        <nav class="nav-links">
+            <h1 class="logo"><span>e</span>-LEARN</h1>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">COURSES</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Student</a></li>
+                <li><a href="#"> About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
-        </div>
 
-        <div class="nav-btn">
-            <a href="#" class="nav-btn1">Login</a>
-            <a href="#" class="nav-btn2">Sign Up</a>
-        </div>
+            <a href="" class="nav-btn">Sign Up</a>
+        </nav>
 
-
-    </div>
-    <div class="main">
         <div class="content">
-            <h1>Find Our Best Online<br>Courses & Become <br>the Master</h1>
-            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque
-                expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus
-                <br> a quae totam ipsa illum minus laudantium?
-            </p>
+            <h2>Explore your <span>CREATIVITY</span></h2>
+            <h2>With hands-on <span>certifications </span></h2>
+        </div>
+        <div class="content2">
+            <h4><span>e</span>-learn provides online courses for </h4>
+            <h4>Senior Secondary school students in</h4>
+            <h4>Nigeria in area of career planning and</h4>
+            <h4>education</h4>
 
-            <div class="search">
-                <input class="srch" type="search" name="" placeholder="Search your courses">
-                <a href="#"> <button class="btn">Search</button></a>
+            <a class="get-started">Get Started</a>
+        </div>
+
+        <div class="shape-img">
+            <img src="./images/eadvise-removebg.png" alt="">
+        </div>
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Register</button>
+                <button type="button" class="toggle-btn" onclick="register()">Login</button>
             </div>
+            <div class="social-icons">
+                <img src="./images/fb.png" alt="">
+                <img src="./images/gp.png" alt="">
+                <img src="./images/tw.png" alt="">
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Enter Email" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <div class="align-checkbox">
+                    <input type="checkbox" class="check-box">
+                    <p>Remember Password</p>
+                </div>
 
+                <a class="submit-btn" href="./dashboard2.html">Login</a>
+            </form>
+            <form action="" id="register" class="input-group">
+                <!-- <input type="text" class="input-field" placeholder="User Id" required> -->
+                <input type="text" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <div class="align-checkbox">
+                    <input type="checkbox" class="check-box">
+                    <p>I agree to the terms and conditions</p>
+                </div>
 
-
+                <a class="submit-btn" href="./">Register</a>
+            </form>
         </div>
     </div>
 
     <!-- Joan worked here  -->
-
     <div class="whole">
         <div class="part">
-            <img src="images/social_leaderboard_FILL0_wght400_GRAD0_opsz48.svg" class="img" />
+            <img src="images/medal.svg" class="img" />
             <div class="badge-div">
-                <p> <strong>20,000+</strong></p>
+                <p id="first-child">20,000+</p>
                 <p id="gray-small-text">Special courses</p>
             </div>
         </div>
 
         <div class="part">
-            <img src="images/instructoricon.png" class="img" />
+            <img src="images/student.svg" class="img" />
             <div class="badge-div">
-                <p><strong>480,00+</strong></p>
+                <p id="first-child">480,000+</p>
                 <p id="gray-small-text">Enrolled Student</p>
             </div>
         </div>
 
         <div class="part">
-            <img src="images/Studenticon.png" class="img" />
+            <img src="images/chalkboard-teacher.svg" class="img" />
             <div class="badge-div">
-                <p><strong>4,000+</strong></p>
+                <p id="first-child">4,000+</p>
                 <p id="gray-small-text">Expert Instructor</p>
             </div>
         </div>
     </div>
-
 
     <!------------ Atom worked here ------------>
     <section>
@@ -98,7 +120,7 @@
                 <p id="course-header"><strong>Our Popular Courses</strong></p>
                 <hr class="line">
             </div>
-            <a href="#" id="allcourse">ALL COURSES</a>
+            <a href="all-courses/all-courses.html" id="allcourse">ALL COURSES</a>
         </div>
 
         <!---------------------- Row 1 ---------------------->
@@ -204,7 +226,6 @@
     </section>
 
     <!------------ Grace worked here ------------>
-
     <div class="Find-course">
         <div class="wrapper">
             <div>
@@ -231,8 +252,11 @@
     </div>
 
     <!-- Yussuf worked here -->
-
     <div class="blogg-div">
+        <div class="yuhead">
+            <h1>Testimonies</h1>
+            <hr class="line">
+        </div>
         <div class="feedback-wrapper">
             <div class="blogg-img">
                 <div class="washington">
@@ -409,7 +433,8 @@
     <section class="subs">
         <div class="subscribe">
             <h2>Subscribe Newsletter</h2>
-            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.aperiam?
+            <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, asperiores? Officiis, aperiam?
                 consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
                 perspiciatis!.</p>
         </div>
@@ -420,13 +445,12 @@
         </div>
     </section>
 
-
     <!-- James worked here -->
     <div class="footer-wrapper">
         <div class="footer-items">
             <div class="flex-display">
                 <img src="images/e-book.png" alt="" width="100px" height="auto">
-                <h3 id="big-text">E-LEARN</h3>
+                <h3 id="big-text">e-LEARN</h3>
             </div>
             <p id="small-gray-text">Privacy Policy</p>
 
@@ -439,30 +463,30 @@
         <div class="footer-items">
             <h2>Home</h2>
             <div class="big-bold-gray-text">
-                <p>Home</p>
-                <p>About Us</p>
-                <p>Our Process</p>
-                <p>Services</p>
+                <p><a href="">Home</a></p>
+                <p><a href="">About Us</a></p>
+                <p><a href="">Our Process</a></p>
+                <p><a href="">Services</a></p>
             </div>
         </div>
 
         <div class="footer-items">
             <h2>Latest Courses</h2>
             <div class="big-bold-gray-text">
-                <p>General Science</p>
-                <p>Web Programming</p>
-                <p>Civil Engineering</p>
-                <p>Business Studies</p>
+                <p><a href="">General Science</a></p>
+                <p><a href="">Web Programming</a></p>
+                <p><a href="">Civil Engineering</a></p>
+                <p><a href="">Business Studies</a></p>
             </div>
         </div>
 
         <div class="footer-items">
             <h2>Community</h2>
             <div class="big-bold-gray-text">
-                <p>Go Premium</p>
-                <p>Team Plans</p>
-                <p>Refer a friend</p>
-                <p>Gift Cards</p>
+                <p><a href=""> Go Premium</a></p>
+                <p><a href="">Team Plans</a></p>
+                <p><a href="">Refer a friend</a></p>
+                <p><a href="">Gift Cards</a></p>
             </div>
         </div>
 
@@ -471,19 +495,19 @@
             <div class="big-bold-gray-text">
                 <div class="items-flex">
                     <i class="fa-brands fa-twitter"></i>
-                    <p>Twitter</p>
+                    <a href="">Twitter</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-instagram"></i>
-                    <p>Instagram</p>
+                    <a href="">Instagram</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-facebook"></i>
-                    <p>Facebook</p>
+                    <a href="">Facebook</a>
                 </div>
                 <div class="items-flex">
                     <i class="fa-brands fa-linkedin"></i>
-                    <p>LinkedIn</p>
+                    <a href="">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -491,7 +515,7 @@
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
+    <script defer src="./js/app.js"></script>
 </body>
 
 </html>

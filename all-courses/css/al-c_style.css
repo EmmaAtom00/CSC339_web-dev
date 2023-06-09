@@ -1,0 +1,100 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: "poppins" sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 8em;
+}
+
+.hero hr {
+    width: 80px;
+    border: 2px solid #2774ea;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.course-div {
+    background: #fff;
+    box-shadow: #5d5d5e21 0 8px 24px;
+    /* border: 1px solid #2774ea; */
+    width: 25vw;
+    height: fit-content;
+    padding-bottom: 0.2em;
+}
+
+.colphys h1 {
+    font-size: 25px;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+.course-div-text hr {
+    width: 100px;
+    border: 1px solid #2774ea;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.course-div-img {
+    object-fit: cover;
+    width: 25vw;
+    height: 150px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+.hero-txt {
+    color: black;
+}
+
+.course-div-text {
+    margin: 2em;
+}
+
+.course-div-text p {
+    color: #00000067;
+}
+
+button {
+    text-decoration: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    background: #2774ea;
+    transition: 0.1ms;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.colphys {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    margin-top: 1em;
+}
+
+.mycourses {
+    margin-bottom: 1em;
+    margin-top: 4em;
+}
+
+.mycourses h1{
+    padding-bottom: 0.4em;
+}
+
+.mycourses h1 span {
+    font-size: 40px;
+    color: #2774ea;
+}
