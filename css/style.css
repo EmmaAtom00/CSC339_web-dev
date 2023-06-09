@@ -331,8 +331,8 @@ section {
     background: #fff;
     border-radius: 10px;
     box-shadow: #00000023 0px 8px 24px;
-    width: 30%;
-    height: 50%;
+    /* height: 50%; */
+    width: auto;
 }
 
 
@@ -351,6 +351,7 @@ section {
 
 .hero {
     font-size: 19px;
+    white-space: nowrap;
 }
 
 .rating {
@@ -380,7 +381,8 @@ section {
 
 .row-1, .row-2 {
     display: flex;
-    justify-content: space-between;
+    gap: 2em;
+    justify-content: space-around;
     margin-bottom: 50px;
 }
 
